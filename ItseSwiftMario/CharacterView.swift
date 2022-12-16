@@ -36,7 +36,7 @@ struct CharacterView: View {
         .padding()
         }
         .cornerRadius(24)
-        .padding()
+        .padding(8)
     }
 }
 
