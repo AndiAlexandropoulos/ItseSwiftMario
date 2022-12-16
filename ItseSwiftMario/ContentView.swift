@@ -11,7 +11,7 @@ struct ContentView: View {
     
     var body: some View {
         
-        // 
+
         ZStack{
             ScrollView{
                 VStack{
@@ -31,13 +31,15 @@ struct ContentView: View {
                                   imageName: "Mario",
                                   description: "desc 4")
                 }
+                .background(Color.black)   // gehört noch zur scrollview
             }
+            
         }
+        
+            .cornerRadius(12)
+            .padding(4)
             
-            .cornerRadius(24)
-            .padding()
-            .opacity(0.85)
-            
+        // ContentView 2
             HStack{
                 Image("Yoshi")
                     .resizable()
@@ -46,7 +48,10 @@ struct ContentView: View {
                     .resizable()
                     .frame(width: 120,height: 120)
                 
+                    .background(Color.green)
             }
+        
+        // ContentView 3
             VStack{
                 Image("GreenShell")
                     .resizable()
@@ -55,8 +60,10 @@ struct ContentView: View {
                     .resizable()
                     .frame(width: 120,height: 120)
             }
-            
+            .colorInvert()
+            .background(Color.black)
         }
+    
     
 }
     
