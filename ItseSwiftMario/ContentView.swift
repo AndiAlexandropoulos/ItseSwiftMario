@@ -17,19 +17,19 @@ struct ContentView: View {
                 VStack{
                     CharacterView(name: "Mario",
                                   imageName: "Mario",
-                                  description: "desc 1")
+                                  description: "Itse me, Mario!")
                     
                     CharacterView(name: "Yoshi",
                                   imageName: "Yoshi",
-                                  description: "desc 2")
+                                  description: "Yeppi!")
                     
                     CharacterView(name: "GreenShell",
                                   imageName: "GreenShell",
-                                  description: "desc 3")
+                                  description: "Knock knock who´s there?")
                     
                     CharacterView(name: "Maria",
                                   imageName: "Mario",
-                                  description: "desc 4")
+                                  description: "This is just a costume")
                 }
                 .background(Color.black)   // gehört noch zur scrollview
             }
