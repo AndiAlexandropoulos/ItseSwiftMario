@@ -31,13 +31,16 @@ struct ContentView: View {
                                   imageName: "Mario",
                                   description: "This is just a costume")
                 }
-                .background(Color.black)   // gehört noch zur scrollview
+                .background(Color.black)// gehört noch zur scrollview
+               // .font(.custom(String, size: <#T##CGFloat#>))
             }
             
         }
         
             .cornerRadius(12)
             .padding(4)
+        
+        
             
         // ContentView 2
             HStack{
@@ -63,16 +66,29 @@ struct ContentView: View {
             .colorInvert()
             .background(Color.black)
         }
-    
+    init(){
+        for familyName in UIFont.familyNames{
+            print(familyName)
+            
+            for fontName in UIFont.fontNames(forFamilyName: familyName){
+                print("--\(fontName)")
+            }
+        }
+    }
     
 }
     
     func sendMessage(){
         
     }
+
+
     struct ContentView_Previews: PreviewProvider {
         static var previews: some View {
             ContentView()
         }
+        
+        
+        
 
 }

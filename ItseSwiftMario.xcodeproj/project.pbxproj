@@ -15,6 +15,8 @@
 		A9B77557294C7C8E008F7711 /* ItseSwiftMarioUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B77556294C7C8E008F7711 /* ItseSwiftMarioUITests.swift */; };
 		A9B77559294C7C8E008F7711 /* ItseSwiftMarioUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B77558294C7C8E008F7711 /* ItseSwiftMarioUITestsLaunchTests.swift */; };
 		A9B77566294C8842008F7711 /* CharacterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9B77565294C8842008F7711 /* CharacterView.swift */; };
+		A9FA31612950C6F2002E8E9F /* SuperMarioBros-ov7d.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A9FA31602950C6F2002E8E9F /* SuperMarioBros-ov7d.ttf */; };
+		A9FA31632950C796002E8E9F /* Cooper Std Black Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A9FA31622950C796002E8E9F /* Cooper Std Black Italic.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +48,9 @@
 		A9B77556294C7C8E008F7711 /* ItseSwiftMarioUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItseSwiftMarioUITests.swift; sourceTree = "<group>"; };
 		A9B77558294C7C8E008F7711 /* ItseSwiftMarioUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItseSwiftMarioUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		A9B77565294C8842008F7711 /* CharacterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterView.swift; sourceTree = "<group>"; };
+		A9FA31602950C6F2002E8E9F /* SuperMarioBros-ov7d.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SuperMarioBros-ov7d.ttf"; sourceTree = "<group>"; };
+		A9FA31622950C796002E8E9F /* Cooper Std Black Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cooper Std Black Italic.ttf"; sourceTree = "<group>"; };
+		A9FA31642950CC0F002E8E9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +101,8 @@
 		A9B7753A294C7C8D008F7711 /* ItseSwiftMario */ = {
 			isa = PBXGroup;
 			children = (
+				A9FA31642950CC0F002E8E9F /* Info.plist */,
+				A9FA315F2950C691002E8E9F /* Fonts */,
 				A9B7753B294C7C8D008F7711 /* ItseSwiftMarioApp.swift */,
 				A9B7753D294C7C8D008F7711 /* ContentView.swift */,
 				A9B77565294C8842008F7711 /* CharacterView.swift */,
@@ -128,6 +135,15 @@
 				A9B77558294C7C8E008F7711 /* ItseSwiftMarioUITestsLaunchTests.swift */,
 			);
 			path = ItseSwiftMarioUITests;
+			sourceTree = "<group>";
+		};
+		A9FA315F2950C691002E8E9F /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				A9FA31622950C796002E8E9F /* Cooper Std Black Italic.ttf */,
+				A9FA31602950C6F2002E8E9F /* SuperMarioBros-ov7d.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,6 +250,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9FA31612950C6F2002E8E9F /* SuperMarioBros-ov7d.ttf in Resources */,
+				A9FA31632950C796002E8E9F /* Cooper Std Black Italic.ttf in Resources */,
 				A9B77543294C7C8E008F7711 /* Preview Assets.xcassets in Resources */,
 				A9B77540294C7C8E008F7711 /* Assets.xcassets in Resources */,
 			);
@@ -423,6 +441,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"ItseSwiftMario/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ItseSwiftMario/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -451,6 +470,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"ItseSwiftMario/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ItseSwiftMario/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

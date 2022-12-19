@@ -12,8 +12,8 @@ struct CharacterView: View {
     var name : String
     var imageName : String
     var description : String
-    
     var body: some View {
+        
         ZStack{
             Color.cyan
             HStack{
@@ -21,8 +21,8 @@ struct CharacterView: View {
                     .resizable()
                     .frame(width: 160,height:160)
                 VStack{
-                    Text(name)
-                    Text(description)
+                    Text(name).font(.custom("Cooper Std", size: 16))
+                    Text(description).font(.custom("Super Mario Bros.", size: 16))
                     Button(action : sendMessage){
                         Text("Message Me!")
                             .tint(Color.blue)
@@ -45,5 +45,6 @@ struct CharacterView_Previews: PreviewProvider {
         CharacterView(name: "Wario", imageName: "Mario",
         description:"Itse me, a italian Plummer looking for his Principessa")
     }
+    
 }
 
